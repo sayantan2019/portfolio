@@ -1,108 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayantan-Laha | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            background-color: rgb(4, 4, 142);
-            color: white;
-            font-family: "Poppins", serif;
-        }
-
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 12vh;
-            background-color: rgb(3, 3, 103);
-
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-            
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-            font-size: medium;
-            font-size: 1.2rem;
-
-        }
-
-        .left{
-            font-size: 2rem;
-        }
-
-        .first-section{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 2.8rem 0;
-        }
-
-        .first-section > div{
-            width: 30%;
-        }
-
-        .left-section{
-            width: 1.3rem;
-            font-size: 1.9rem;
-            margin-top: 1.2rem;
-        }
-        .right-section img{
-            width: 30rem;
-            height: 30rem;
-        }
-
-        .purple{
-            color: rgb(255, 0, 230);
-            font-weight: bold;
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
 
 </head>
 
-
 <body>
-    
+
     <header>
         <nav>
-            <div class="left">Sayantan Laha</div>
+            <div class="left">
+                <h1>Sayantan Laha</h1>
+            </div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact me</li>
-                    
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="/">Carrier</a></li>
+                    <li><a href="/">Contact me</a></li>
+
                 </ul>
             </div>
         </nav>
     </header>
-    
+
     <main>
         <section class="first-section">
             <div class="left-section">
                 Hi, my name is <spam class="purple">Sayantan</spam>
-                <div>i am a full stack developer</div>
+                <div>i am a passionate</div>
+                <span id="element" class="element"></span>
+                <div class="button">
+                    <button class="btn" onclick="opendrive()">Resume</button>
+                    <button class="btn" onclick="opengithub()">Github</button>
+                </div>
             </div>
             <div class="right-section">
                 <img src="./pngtree-programmer-it-developer-png-image_13520483.png" alt="">
             </div>
         </section>
+        <hr>
+        <section class="project" id="project">
+            <span class="text-color">what i had done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="./business-person-achieving-milestone-3118489-2606135@0.webp" alt="">
+                    <div class="vertical-title">Resturant Managment System (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil natus veniam illo
+                        dicta ipsam aliquam minima est alias deserunt, eum magnam, odit voluptate sapiente. Perspiciatis
+                        aperiam doloribus non fugit.
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./business-person-achieving-milestone-3118489-2606135@0.webp" alt="">
+                    <div class="vertical-title">
+                        Banking Website(2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil natus veniam illo
+                        dicta ipsam aliquam minima est alias deserunt, eum magnam, odit voluptate sapiente. Perspiciatis
+                        aperiam doloribus non fugit.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="./business-person-achieving-milestone-3118489-2606135@0.webp" alt="">
+                    <div class="vertical-title">
+                        smart-face-vehicle linker(2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil natus veniam illo
+                        dicta ipsam aliquam minima est alias deserunt, eum magnam, odit voluptate sapiente. Perspiciatis
+                        aperiam doloribus non fugit.
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
     </main>
 
+
+    <footer>
+        <div class="footer">
+            <div class="first-footer"></div>
+            <div class="second-footer"></div>
+            <div class="third-footer"></div>
+            <div class="forth-footer">
+                Copyright © sayantanlahaportfolio.com | All right reserved
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script src="./text.js"></script>
+    <script src="scroll.js"></script>
+    <script src="resume.js"></script>
+
 </body>
+
 </html>
