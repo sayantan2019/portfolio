@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -13,13 +12,14 @@ body {
 
 nav {
     position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 12vh;
+    z-index: 1000;
     background-color: rgb(3, 3, 103);
 
 }
@@ -91,7 +91,7 @@ main hr {
     margin: 23vh 0;
 }
 
-.first-section>div {
+.first-section > div {
     width: 30%;
 }
 
@@ -103,31 +103,33 @@ main hr {
     flex-direction: column;
     justify-content: flex-end;
     height: 5vh;
-    
+
 }
 
-.left-section button{
+.left-section button {
     position: relative;
     margin: 5px;
     color: white;
     font-size: 18px;
     background-color: transparent;
-    border: 1px solid white;
-    padding: 12px;
+    border: 2px solid white;
+    padding: 8px;
     border-radius: 35px;
     top: 2vh;
-    font-weight: bold;
     cursor: pointer;
     transition: transform .2s;
 }
-.left-section button:hover{
-    transform: scale(1.3);
+
+.left-section button:hover {
+    transform: scale(1.5);
     background-color: white;
     color: black;
+    font-weight: bold;
 }
 
 
 .right-section img {
+
     width: 30rem;
     height: 30rem;
 }
@@ -137,23 +139,7 @@ main hr {
     font-weight: bold;
 }
 
-.element {
-    color: rgb(255, 0, 230);
-    font-weight: bold;
-    -webkit-animation: element 1s ease-in-out infinite alternate;
-    -moz-animation: element 1s ease-in-out infinite alternate;
-    animation: element 1s ease-in-out infinite alternate;
-}
 
-@-webkit-keyframes element {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
 
 .project {
     max-width: 80vw;
@@ -166,7 +152,7 @@ main hr {
     font-weight: normal;
 }
 
-.project .box{
+.project .box {
     background: white;
     width: 77vw;
     height: 2px;
@@ -174,23 +160,23 @@ main hr {
     display: flex;
 }
 
-.project .vertical{
+.project .vertical {
     height: 93px;
     width: 1px;
     background-color: white;
     margin: 0 200px;
-    
+
 
 }
 
-.vertical-title{
+.vertical-title {
     position: relative;
     top: 75px;
     width: 150px;
     font-size: 14px;
 }
 
-.vertical-desc{
+.vertical-desc {
     position: relative;
     top: 86px;
     width: 150px;
@@ -198,28 +184,29 @@ main hr {
     color: grey;
 }
 
-.img-top{
+.img-top {
     position: relative;
     width: 65px;
     top: -50px;
     left: -30px;
 }
 
-footer{
+footer {
     display: flex;
     height: 20vh;
     background: rgb(18, 7, 82);
 }
 
-.footer{
+.footer {
     display: flex;
     padding: 23px 122px;
     justify-content: space-evenly;
 }
-.forth-footer{
+
+.forth-footer {
     text-align: center;
     color: grey;
     padding: 12px 0;
-    margin:  60px;
+    margin: 60px;
     margin-left: 400px;
 }
