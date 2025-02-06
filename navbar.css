@@ -1,0 +1,48 @@
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: rgb(3, 3, 103);
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.right ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    border: 2px solid white;
+    padding: 0px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    background-color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+main {
+    margin-top: 15vh; /* Prevents content from overlapping the navbar */
+}

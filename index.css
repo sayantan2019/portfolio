@@ -9,64 +9,6 @@ body {
     font-family: "Poppins", serif;
 }
 
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 12vh;
-    z-index: 1000;
-    background-color: rgb(3, 3, 103);
-
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-
-}
-
-nav ul li {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 20px;
-
-    list-style: none;
-    margin: 0 23px;
-    font-size: medium;
-    font-size: 1.2rem;
-    transition: transform .2s;
-
-
-}
-
-nav ul li:hover {
-    transform: scale(1.5);
-    background-color: white;
-
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-
-
-
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-
-}
-
-
 .left h1 {
     font-size: 2rem;
     line-height: 1.2;
