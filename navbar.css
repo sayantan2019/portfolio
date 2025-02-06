@@ -13,6 +13,12 @@ nav {
     z-index: 1000;
 }
 
+.left h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
 .right ul {
     display: flex;
     justify-content: center;
