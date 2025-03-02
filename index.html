@@ -7,10 +7,15 @@
     <title>portfolio</title>
     <link rel="icon" type="image/x-icon" href="./logos/logo-img.ico">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+
+    
     <section id="nav"></section>
     <nav class="nav">
         <div class="profile-logo">
@@ -24,6 +29,25 @@
         </ul>
         <button class="contact-me"><a href="#contact">contact me</a></button>
     </nav>
+
+    <section id="clock">
+        <div class="datetime">
+            <div class="time">
+                <span id="hr">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="ampm">AM</span>
+            </div>
+            <div class="date">
+                <span id="days">Monday,</span>
+                <span id="date">3</span>
+                <span id="month">March</span>
+                <span id="year">2025</span>
+            </div>
+        </div>
+    </section>
 
     <section class="Home">
         <button class="Avl-work">Avaible For Work</button>
@@ -252,8 +276,8 @@
                 }
             });
         });
-        
     </script>
+    <script src="./clock.js"></script>
 </body>
 
 </html>
