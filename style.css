@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #fafafa;
+}
+
+#nav {
+    height: 3vh;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5cm;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+ul,
+li,
+a {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+li {
+    cursor: pointer;
+
+}
+
+.profile-logo {
+    width: 1.5cm;
+    height: 1.5cm;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+img[alt="profile-logo"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom-animation 10s infinite alternate ease-in-out;
+
+}
+
+.contact-me {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.Avl-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    margin-bottom: 0;
+    padding: 3px;
+    font-size: 14px;
+    width: 4cm;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+
+
+}
+
+.Avl-work::before {
+    content: "•";
+    /* Unicode bullet */
+    color: green;
+    font-size: 34px;
+    margin-right: 8px;
+
+
+}
+
+.name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.name h1 {
+    font-size: 50px;
+}
+
+.name p {
+    color: grey;
+    word-spacing: 6px;
+}
+
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+}
+
+.email {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 4cm;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cv {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 4cm;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.photo {
+    width: 7.5cm;
+    height: 10cm;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+img[alt="photo"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.textbox {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    height: 9.2cm;
+    width: 19cm;
+    background-color: white;
+
+}
+
+.textbox p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1.5;
+}
+
+.textbox h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+#education{
+    margin-bottom: 50px;
+}
+
+.education{
+    display: block;
+    padding: 21px;
+    padding-right: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.education h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.school {
+    margin-bottom: 20px;
+}
+
+.school .img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.school .img img {
+    width: 100%;
+    height: auto;
+}
+
+.school .date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.school .school-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.school .course-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.school .location {
+    font-size: 14px;
+    color: #666;
+}
+
+#skills{
+    margin-bottom: 50px;
+}
+
+.skills{
+    display: block;
+    padding: 21px;
+    padding-right: 50px;
+    background-color: #fcfcff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.skills h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.lang-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.lang-box .img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.lang-box .img img {
+    width: 100%;
+    height: auto;
+    background-blend-mode:darken;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+
+.contact{
+    display: block;
+    padding: 21px;
+    padding-right: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.contact-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.contact-box .img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.contact-box .img img {
+    width: 100%;
+    height: auto;
+    background-blend-mode:darken;
+}
+
+#footer{
+    margin-bottom: 50px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    
+}
+
+.footer p{
+    position: absolute;
+    margin-top: 75px;
+    font-size: medium;
+
+}
