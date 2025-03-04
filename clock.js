@@ -7,7 +7,7 @@ function updateClock() {
     let ampm = hours >= 12 ? 'PM' : 'AM';
     const ohours = hours;
     // Convert 24-hour format to 12-hour format
-    hours = hours % 12;
+    hours = hours % 12 || 12;
     hours = hours ? hours : 12; // The hour '0' should be '12'
 
     // Add leading zeros
@@ -16,13 +16,18 @@ function updateClock() {
 
     const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
 
-    const banner = document.getElementById('clock')
+    const banner = document.getElementById('banner')
+    const edu = document.getElementById('education')
+    const about = document.getElementById('text-box')
     if(ohours>=17 || ohours<6){
-        banner.classList.remove('light-theam');
         banner.classList.add('dark-theam');
+        edu.classList.add('dark-theam');
+        about.classList.add('dark-theam');
     }else{
+        
         banner.classList.remove('dark-theam');
-        banner.classList.add('light-theam');
+        edu.classList.add('dark-theam');
+        about.classList.add('dark-theam');
     }
 
     
