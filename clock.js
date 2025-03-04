@@ -46,38 +46,3 @@ setInterval(updateClock, 1000); // Update time every second
 updateClock(); // Initial call to avoid delay
 
 
-<<<<<<< HEAD
-=======
-setInterval(() => {
-    let ct = new Date();
-
-    hr.innerHTML = (ct.getHours() % 12 || 12 < 10 ? "0" : "") + ct.getHours()
-    min.innerHTML = (ct.getMinutes() < 10 ? "0" : "") + ct.getMinutes()
-    sec.innerHTML = (ct.getSeconds() < 10 ? "0" : "") + ct.getSeconds()
-    ampm.innerHTML = ct.getHours() < 12 ? "am" : "pm"
-
-},1000)
-
-days.innerHTML = ct.getDay();
-date.innerHTML = ct.getDate();
-month.innerHTML = ct.getMonth();
-year.innerHTML = ct.getFullYear();
-
-function formatdate(date){
-    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-    let day = days[date.getDay()];
-    let month = months[date.getMonth()];
-    let year = date.getFullYear();
-    let num = date.getDate();
-
-    return `${day} ${month} ${num}, ${year}`;
-}
-
-setInterval(()=>{
-    let ct = new Date();
-    let date = formatdate(ct);
-    docoument.getElementByclassName("date").innerHTML = date;
-})
->>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6

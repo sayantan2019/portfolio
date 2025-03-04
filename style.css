@@ -45,12 +45,9 @@ a {
     transition: transform .2s;
 }
 
-<<<<<<< HEAD
 li :hover {
     color: black;
     transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
-=======
->>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
 
 
  li :hover{
@@ -58,7 +55,7 @@ li :hover {
     transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
     
  }
-
+}
  
 
 .profile-logo {
@@ -93,16 +90,10 @@ img[alt="profile-logo"] {
     margin-bottom: 10vh;
     text-align: right;
     border-radius: 5px;
-<<<<<<< HEAD
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     cursor: default;
     transition: background-color 0.5s, color 0.5s;
-=======
-    width: auto;
-    cursor:default;
-
->>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
 }
 
 .light-theam {
@@ -216,11 +207,7 @@ img[alt="profile-logo"] {
     background-color: white;
 }
 
-<<<<<<< HEAD
 .cv:hover {
-=======
-.cv:hover{
->>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
     opacity: 0.6;
 }
 
