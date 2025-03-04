@@ -7,10 +7,9 @@ body {
     display: block;
     margin-left: 25vh;
     margin-right: 25vh;
-    color: black;
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    background-color: #fafafa;
+    
 
 }
 
@@ -40,15 +39,27 @@ a {
     gap: 2rem;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: grey;
     font-size: 20px;
     padding: 5px;
+    transition: transform .2s;
 }
 
-li {
-    cursor: pointer;
+<<<<<<< HEAD
+li :hover {
+    color: black;
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+=======
+>>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
 
-}
+
+ li :hover{
+    color: black;
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+    
+ }
+
+ 
 
 .profile-logo {
     width: 1.5cm;
@@ -66,7 +77,8 @@ img[alt="profile-logo"] {
 
 }
 
-.contact-me, .contact-me a{
+.contact-me,
+.contact-me a {
     background-color: black;
     color: white;
     padding: 5px;
@@ -75,45 +87,49 @@ img[alt="profile-logo"] {
     cursor: pointer;
 }
 
-#clock{
-    margin-top: 2.5vh;
-    margin-bottom: 5vh;
+.clock-banner {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
     text-align: right;
-    
-    
-}
-
-.datetime{
-    display: inline-block;
-    padding: 15px;
-    line-height: 1.5;
-    margin: auto;
-    font-size: 8px;
-    border-right: 3px solid black;
-    padding-right: 15px;
-    background-color: #ffffff10;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+<<<<<<< HEAD
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    cursor: default;
+    transition: background-color 0.5s, color 0.5s;
+=======
     width: auto;
+    cursor:default;
 
+>>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
 }
 
-.time{
-    
-    font-size: 4.5em;
+.light-theam {
+    background-color: #fff;
+    color: #222;
+}
+
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+.time {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
     font-weight: 500;
 }
-#sec{
-    font-size: 25px;
+
+.date {
+    font-size: 2rem;
+    font-weight: 200;
 }
 
-#ampm{
-    font-size: 20px
-}
 
-.date{
-    font-size: 3em;
-}
 
 
 .Avl-work {
@@ -200,6 +216,14 @@ img[alt="profile-logo"] {
     background-color: white;
 }
 
+<<<<<<< HEAD
+.cv:hover {
+=======
+.cv:hover{
+>>>>>>> 1c30358cfadcd2b851d2adf7b75707c06b6204a6
+    opacity: 0.6;
+}
+
 .about {
     display: flex;
     justify-content: space-around;
@@ -247,11 +271,11 @@ img[alt="photo"] {
     margin-bottom: 5px;
 }
 
-#education{
+#education {
     margin-bottom: 50px;
 }
 
-.education{
+.education {
     display: block;
     padding: 21px;
     padding-right: 50px;
@@ -304,19 +328,27 @@ img[alt="photo"] {
     margin-bottom: 6px;
 }
 
-.school button, .school a{
-    padding: 3px; 
+.school button,
+.school a {
+    padding: 3px;
     border-radius: 10px;
     color: white;
     background-color: black;
     font-size: 15px;
 }
 
-#skills{
+.school button:hover,
+.school a:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#skills {
     margin-bottom: 50px;
 }
 
-.skills{
+.skills {
     display: block;
     padding: 21px;
     padding-right: 50px;
@@ -330,14 +362,14 @@ img[alt="photo"] {
     margin-bottom: 5px;
 }
 
-.lang-box{
+.lang-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     padding: 10px;
 }
 
-.lang-box .img{
+.lang-box .img {
     width: 200px;
     height: 200px;
 
@@ -346,14 +378,14 @@ img[alt="photo"] {
 .lang-box .img img {
     width: 100%;
     height: auto;
-    background-blend-mode:darken;
+    background-blend-mode: darken;
 }
 
-#contact{
+#contact {
     margin-bottom: 50px;
 }
 
-.contact{
+.contact {
     display: block;
     padding: 21px;
     padding-right: 50px;
@@ -367,40 +399,45 @@ img[alt="photo"] {
     margin-bottom: 5px;
 }
 
-.contact-box{
+.contact-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     padding: 10px;
 }
 
-.contact-box .img{
+.contact-box .img {
     width: 100px;
     height: 100px;
 
 }
 
+.contact-box .img:hover {
+    opacity: 0.7;
+}
+
 .contact-box .img img {
     width: 100%;
     height: auto;
-    background-blend-mode:darken;
+    background-blend-mode: darken;
 }
 
-#footer{
+#footer {
     margin-bottom: 50px;
-    
+
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: black;
     color: white;
     height: 15vh;
-    
+
 }
 
-.footer p{
+.footer p {
     position: absolute;
     margin-top: 75px;
     font-size: medium;
